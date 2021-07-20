@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra V có nằm trong mảng không</title>
+</head>
+<body>
+<script>
+    let mang = new Array(10);
+    for (let i=0; i<10; i++){
+        mang[i]= Math.round(Math.random()*10);
+        document.write(mang[i]+',');
+    }
+    m = +prompt("nhap vao so V");
+    if (mang.indexOf(m)>=0){
+        document.write("V is in the array");
+    } else {
+        document.write( "V is not in the array");
+    }
+</script>
+</body>
+</html>

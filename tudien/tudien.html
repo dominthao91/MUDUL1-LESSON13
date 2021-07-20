@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>từ điển</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<button onclick="search()">search</button>
+<p id="kq">ketqua</p>
+<script>
+    let english = ['map','way','art','people','family'];
+    let vietnames = ['bản đồ', 'đường','nghệ thuật','người','gia đình'];
+    function search() {
+        let nhapvao = document.getElementById("nhap").value;
+        for (let i = 0; i < english.length; i++){
+            if(nhapvao === english[i]) {
+                document.getElementById("kq").innerHTML = english[i]+ " - " + vietnames[i];
+                break;
+            } else {
+                document.getElementById("kq").innerHTML = "Không Tìm Thấy";
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>

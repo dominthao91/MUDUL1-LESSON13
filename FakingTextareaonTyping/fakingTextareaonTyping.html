@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faking Textarea on Typing</title>
+</head>
+<body>
+<h1>Nhập vào Những lời bạn muốn nói với tôi</h1>
+<textarea onkeydown="vivavivu();" name="troll" id="id" cols="30" rows="10" style="border: black; border-style: solid"></textarea>
+<script>
+   let i = 0;
+    let ketqua="";
+    function vivavivu(){
+        document.getElementById("id").value = "";
+        let codinh="Nhung là một kẻ ngốc,Nhung là 1 con Cún đáng yêu NHUNG DÂM DÊ";
+        let dodai= codinh.length;
+        if (i<dodai) {
+            ketqua += codinh[i];
+            document.getElementById("id").value = ketqua;
+            i++;
+        }else {
+            document.getElementById("id").innertext = ketqua;
+            i = 0;
+            ketqua = "";
+        }
+    }
+</script>
+</body>
+</html>
+
+
+</html>

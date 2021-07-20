@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giá trị trung bình mảng</title>
+</head>
+<body>
+<script>
+    let chuoi = new Array(10);
+    let mang = [];
+    let max =0;
+    let index =-1;
+    let trungbinh=0;
+    for (let i = 0; i < chuoi.length ; i++) {
+        chuoi[i] = Math.round(Math.random() * 100);
+        if (chuoi[i] >= 10) {
+            mang.push(chuoi[i]);
+        }
+        trungbinh+=chuoi[i]
+    }
+    for (let j = 1; j <mang.length ; j++) {
+        if (mang[j] > max){
+            max = mang[j];
+            index = j;
+        }
+    }
+
+    document.write("hàm có"+ mang.length+ " phần tử lớn hơn hoặc bằng 10<br>");
+    document.write(mang.toString()+'<br>');
+    document.write('số lớn nhất là '+ max+ 'tai vị trí thứ'+index+'<br>');
+    document.write('trung bình cộng bằng:'+trungbinh)
+</script>
+</body>
+</html>

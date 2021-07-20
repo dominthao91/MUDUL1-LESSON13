@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hiển thị số nguyên lớn hơn hoặc bằng 10</title>
+</head>
+<body>
+<script>
+    let numbers = new Array(10);
+    let mang = [];
+    for (let i = 0; i < 10 ; i++) {
+        numbers[i] = Math.round(Math.random()*100)
+        if (numbers[i]>=10){
+            mang.push(numbers[i]);
+        }
+    }
+    document.write("hàm có"+ mang.length+ " phần tử lớn hơn hoặc bằng 10<br>");
+    document.write(mang.toString());
+</script>
+</body>
+</html>

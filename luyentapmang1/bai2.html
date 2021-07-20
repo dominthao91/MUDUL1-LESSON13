@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hiển thi số lớn nhất mảng</title>
+</head>
+<body>
+<script>
+    let chuoi = new Array(10);
+    let mang = [];
+    let max =0;
+    let index =-1;
+
+    for (let i = 0; i < 10 ; i++) {
+        chuoi[i] = Math.round(Math.random() * 100);
+        if (chuoi[i] >= 10) {
+            mang.push(chuoi[i]);
+        }
+    }
+    for (let j = 1; j <mang.length ; j++) {
+        if (mang[j] > max){
+            max = mang[j];
+            index = j;
+        }
+    }
+
+    document.write("hàm có"+ mang.length+ " phần tử lớn hơn hoặc bằng 10<br>");
+    document.write(mang.toString()+'<br>');
+    document.write('số lớn nhất là '+ max+ 'tai vị trí thứ'+index);
+
+</script>
+</body>
+</html>

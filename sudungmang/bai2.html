@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập và chèn vào mảng</title>
+</head>
+<body>
+<script>
+    let num = prompt('nhập vào chuỗi số');
+    let chuoi = num.toString();
+    let result = [chuoi[0]];
+    for (let i = 1; i <chuoi.length ; i++) {
+        if (chuoi[i-1]%2===0 && chuoi[i]%2===0){
+            result.push('-',chuoi[i]);
+        }
+        else {
+            result.push(chuoi[i]);
+        }
+    }document.write(result.join(''));
+</script>
+</body>
+</html>

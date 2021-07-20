@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra V và xóa V khỏi mảng</title>
+</head>
+<body>
+<script>
+        let num =[12,21,3,33,4,24,2,52,6,66];
+        let del = +prompt('nhập vào số nguyên');
+        if (num.indexOf(del) != -1){
+            num.splice(num.indexOf(del),1);
+            num.push(0);
+        }
+        document.write(num);
+
+</script>
+</body>
+</html>

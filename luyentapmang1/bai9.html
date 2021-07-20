@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nối 2 mảng</title>
+</head>
+<body>
+<script>
+    let mang1 = new Array(10);
+    let mang2 = new Array(10);
+    let newmang1=[];
+    let newmang2=[];
+    let mangnoi=[];
+    for (let i = 0; i < mang1.length; i++) {
+        mang1[i] = Math.round(Math.random()*10);
+        newmang1+=mang1[i]+',';
+    }document.write('mảng thứ 1 :'+newmang1+'<br>');
+    for (let j = 0; j < mang2.length; j++) {
+        mang2[j] = Math.round(Math.random()*10);
+        newmang2+=mang2[j]+',';
+    }document.write('mảng thứ 2 :'+newmang2+'<br>');
+mangnoi = newmang1.concat(newmang2);
+document.write('mảng sau khi nối = :'+ mangnoi);
+
+</script>
+</body>
+</html>
