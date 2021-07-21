@@ -7,11 +7,15 @@
 <body>
 <script>
     let mangam = new  Array(Math.round(Math.random()*10));
+    let count =0;
     for (let i=0; i<mangam.length; i++) {
-        mangam[i] = Math.round(Math.random() * -100);
+        mangam[i] = Math.round(Math.random() *20) -Math.round(Math.random() *20);
+       if (mangam[i]<0){
+           count++
+       }
     }
     document.write(mangam +'<br>');
-    document.write('số lượng nguyên âm là '+mangam.length);
+    document.write('số lượng nguyên âm là '+count);
 </script>
 </body>
 </html>
